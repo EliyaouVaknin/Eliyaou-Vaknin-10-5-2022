@@ -1,0 +1,25 @@
+[
+    {
+        "LocalObservationDateTime": "2022-05-11T12:28:00+03:00",
+        "EpochTime": 1652261280,
+        "WeatherText": "Mostly cloudy",
+        "WeatherIcon": 6,
+        "HasPrecipitation": false,
+        "PrecipitationType": null,
+        "IsDayTime": true,
+        "Temperature": {
+            "Metric": {
+                "Value": 25.0,
+                "Unit": "C",
+                "UnitType": 17
+            },
+            "Imperial": {
+                "Value": 77.0,
+                "Unit": "F",
+                "UnitType": 18
+            }
+        },
+        "MobileLink": "http://www.accuweather.com/en/il/beersheba/2-215752_1_al/current-weather/2-215752_1_al?lang=en-us",
+        "Link": "http://www.accuweather.com/en/il/beersheba/2-215752_1_al/current-weather/2-215752_1_al?lang=en-us"
+    }
+]

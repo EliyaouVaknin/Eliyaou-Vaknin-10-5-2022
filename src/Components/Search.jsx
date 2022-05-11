@@ -1,14 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../Styles/Search.css'
 
-export default function Search() {
+export default function Search(props) {
+
+  const onCitySearch = (event) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    props.getCityKey(form['cityName'].value);
+  }
+
   return (
     <div className="container">
       <div className="row">
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Enter Place" aria-label="Enter Place" aria-describedby="Enter Place"></input>
-            <span id="SearchBtn" class="input-group-text p-1 btn btn-primary">Search Place</span>
-        </div>
+        <form onSubmit={(event) => onCitySearch(event)} className="input-group mb-3">
+          <input name='cityName' type="text" className="form-control" placeholder="Enter Place" aria-label="Enter Place" aria-describedby="Enter Place"></input>
+          <button id="SearchBtn" className="input-group-text p-1 btn btn-primary">Search Place</button>
+        </form>
       </div>
     </div>
   )
