@@ -1,25 +1,25 @@
 [
     {
-        "LocalObservationDateTime": "2022-05-11T12:28:00+03:00",
-        "EpochTime": 1652261280,
-        "WeatherText": "Mostly cloudy",
-        "WeatherIcon": 6,
+        "LocalObservationDateTime": "2022-05-12T08:59:00+03:00",
+        "EpochTime": 1652335140,
+        "WeatherText": "Sunny",
+        "WeatherIcon": 1,
         "HasPrecipitation": false,
         "PrecipitationType": null,
         "IsDayTime": true,
         "Temperature": {
             "Metric": {
-                "Value": 25.0,
+                "Value": 16.6,
                 "Unit": "C",
                 "UnitType": 17
             },
             "Imperial": {
-                "Value": 77.0,
+                "Value": 62.0,
                 "Unit": "F",
                 "UnitType": 18
             }
         },
-        "MobileLink": "http://www.accuweather.com/en/il/beersheba/2-215752_1_al/current-weather/2-215752_1_al?lang=en-us",
-        "Link": "http://www.accuweather.com/en/il/beersheba/2-215752_1_al/current-weather/2-215752_1_al?lang=en-us"
+        "MobileLink": "http://www.accuweather.com/en/il/jerusalem/213225/current-weather/213225?lang=en-us",
+        "Link": "http://www.accuweather.com/en/il/jerusalem/213225/current-weather/213225?lang=en-us"
     }
 ]

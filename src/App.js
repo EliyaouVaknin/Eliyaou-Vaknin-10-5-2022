@@ -11,6 +11,10 @@ import './App.css';
 
 function App() {
   const forcastKey = '5PAFXNYdptA8Mr0bJznA4UgxeKYbP6tg';
+  var key=215752;
+  var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday','Sunday', 'Monday', 'Tuesday', 'Wednesday'];
+  var d = new Date();
+  var name5Days =[days[d.getDay()],days[d.getDay()+1],days[d.getDay()+2],days[d.getDay()+3],days[d.getDay()+4]]
 
   //Hooks
   const [currentData, setCurrentData] = useState([[
@@ -210,15 +214,19 @@ function App() {
       ]
   }
   ]);
+  const [favoritesList, setFavoritesList] = useState([])
+  const [cityName, setCityName] = useState('Beer Sheva')
+
 
   //Functions
   const getCityKey = async (place) => {
     const baseUrlKey = 'http://dataservice.accuweather.com/locations/v1/cities/search';
     const queryKey = `?apikey=${forcastKey}&q=${place}`
-    let key;
     // await fetch(baseUrlKey + queryKey)
     // .then(res => res.json())
     // .then(res => key = res[0].Key)
+    // .then(res => setCityName(res[0].LocalizedName))
+    
 
     // const baseUrlWeatherData5Days = 'http://dataservice.accuweather.com/forecasts/v1/daily/5day/'
     // const queryWeatherData5Days = `${key}?apikey=${forcastKey}`
@@ -231,17 +239,37 @@ function App() {
     // await fetch(baseUrlCurrentWeatherData + queryCurrentWeatherData)
     // .then(res =>res.json())
     // .then(res => setCurrentData(res))
+    // .then(console.log(currentData[0][0].Temperature.Metric.Value))
   }
+
+
+  const favoritesFunc = (e) => {
+    let status = e.target.checked;
+    if(status == true){
+        let thisFavoriteCity = {
+          favoritekeyNumber: key,
+          favoriteCityName: cityName
+        }
+        setFavoritesList([...favoritesList, thisFavoriteCity])
+    } else {
+      for(let i = 0; i < favoritesList.length; i++){
+        if(favoritesList[i].favoriteCityName == cityName){
+          setFavoritesList(favoritesList.splice(i, 1));
+        }
+      }
+    }
+  }
+
 
   return (
     <div className="App">
       <Router>
         <Sidebar />
         <Header />
-        <Search getCityKey = {getCityKey} />
+        <Search getCityKey = {getCityKey} forcastKey={forcastKey} />
         <Routes>
-          <Route path='/' element={<WeatherDisplay data5Days={data5Days} currentData={currentData} />} />
-          <Route path='/favorites' element={<Favorites />} />
+          <Route path='/' element={<WeatherDisplay data5Days={data5Days} name5Days={name5Days} currentData={currentData} cityName={cityName} favoritesFunc={favoritesFunc} />} />
+          <Route path='/favorites' element={<Favorites favoritesList = {favoritesList} />} />
         </Routes>
       </Router>
     </div>
