@@ -10,7 +10,7 @@ export default function WeatherDisplay({ currentData, name5Days, data5Days, city
     labels: [name5Days[0], name5Days[1], name5Days[2], name5Days[3], name5Days[4], name5Days[5]],
     datasets: [
       {
-        label: "First dataset",
+        label: "Maximum Temperature",
         data: [(data5Days[0].DailyForecasts[0].Temperature.Maximum.Value - 32) * (5 / 9),
         (data5Days[0].DailyForecasts[1].Temperature.Maximum.Value - 32) * (5 / 9),
         (data5Days[0].DailyForecasts[2].Temperature.Maximum.Value - 32) * (5 / 9),

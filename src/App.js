@@ -238,7 +238,6 @@ function App() {
     // await fetch(baseUrlCurrentWeatherData + queryCurrentWeatherData)
     // .then(res =>res.json())
     // .then(res => setCurrentData(res))
-    // .then(console.log(currentData[0][0].Temperature.Metric.Value))
   }
 
   const favoritesFunc = (e) => {
@@ -250,11 +249,13 @@ function App() {
       }
       setFavoritesList([...favoritesList, thisFavoriteCity])
     } else {
+      let tmpArray = [];
       for (let i = 0; i < favoritesList.length; i++) {
-        if (favoritesList[i].favoriteCityName == cityName) {
-          setFavoritesList(favoritesList.splice(i-1, 1));
+        if (favoritesList[i].favoriteCityName != cityName) {
+          tmpArray.push(favoritesList[i]);
         }
       }
+      setFavoritesList(tmpArray);
     }
   }
 
@@ -266,10 +267,6 @@ function App() {
     }
     return false;
   }
-useEffect(() => {
-  console.log(favoritesList)
-},[favoritesList])
-
 
 return (
   <div className="App">
@@ -279,6 +276,7 @@ return (
       <Routes>
         <Route path='/' element={<WeatherDisplay data5Days={data5Days} name5Days={name5Days} currentData={currentData} cityName={cityName} favoritesFunc={favoritesFunc} isFavorites={isFavorites} />} />
         <Route path='/favorites' element={<Favorites favoritesList={favoritesList} />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
     </Router>
   </div>
