@@ -1,7 +1,8 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import '../Styles/Favorites.css'
 
 export default function Favorites({favoritesList}) {
+  useEffect(()=>console.log(favoritesList),[])
   return (
     <div className="container-fluid">
       <div className="row">
