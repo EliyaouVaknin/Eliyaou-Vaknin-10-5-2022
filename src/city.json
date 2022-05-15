@@ -1,0 +1,170 @@
+{
+    "Headline": {
+        "EffectiveDate": "2022-05-15T20:00:00+03:00",
+        "EffectiveEpochDate": 1652634000,
+        "Severity": 7,
+        "Text": "Turning colder Sunday night",
+        "Category": "cold",
+        "EndDate": "2022-05-16T08:00:00+03:00",
+        "EndEpochDate": 1652677200,
+        "MobileLink": "http://www.accuweather.com/en/il/qiryat-gat/215702/daily-weather-forecast/215702?lang=en-us",
+        "Link": "http://www.accuweather.com/en/il/qiryat-gat/215702/daily-weather-forecast/215702?lang=en-us"
+    },
+    "DailyForecasts": [
+        {
+            "Date": "2022-05-15T07:00:00+03:00",
+            "EpochDate": 1652587200,
+            "Temperature": {
+                "Minimum": {
+                    "Value": 57.0,
+                    "Unit": "F",
+                    "UnitType": 18
+                },
+                "Maximum": {
+                    "Value": 79.0,
+                    "Unit": "F",
+                    "UnitType": 18
+                }
+            },
+            "Day": {
+                "Icon": 1,
+                "IconPhrase": "Sunny",
+                "HasPrecipitation": false
+            },
+            "Night": {
+                "Icon": 38,
+                "IconPhrase": "Mostly cloudy",
+                "HasPrecipitation": false
+            },
+            "Sources": [
+                "AccuWeather"
+            ],
+            "MobileLink": "http://www.accuweather.com/en/il/qiryat-gat/215702/daily-weather-forecast/215702?day=1&lang=en-us",
+            "Link": "http://www.accuweather.com/en/il/qiryat-gat/215702/daily-weather-forecast/215702?day=1&lang=en-us"
+        },
+        {
+            "Date": "2022-05-16T07:00:00+03:00",
+            "EpochDate": 1652673600,
+            "Temperature": {
+                "Minimum": {
+                    "Value": 59.0,
+                    "Unit": "F",
+                    "UnitType": 18
+                },
+                "Maximum": {
+                    "Value": 79.0,
+                    "Unit": "F",
+                    "UnitType": 18
+                }
+            },
+            "Day": {
+                "Icon": 4,
+                "IconPhrase": "Intermittent clouds",
+                "HasPrecipitation": false
+            },
+            "Night": {
+                "Icon": 7,
+                "IconPhrase": "Cloudy",
+                "HasPrecipitation": false
+            },
+            "Sources": [
+                "AccuWeather"
+            ],
+            "MobileLink": "http://www.accuweather.com/en/il/qiryat-gat/215702/daily-weather-forecast/215702?day=2&lang=en-us",
+            "Link": "http://www.accuweather.com/en/il/qiryat-gat/215702/daily-weather-forecast/215702?day=2&lang=en-us"
+        },
+        {
+            "Date": "2022-05-17T07:00:00+03:00",
+            "EpochDate": 1652760000,
+            "Temperature": {
+                "Minimum": {
+                    "Value": 59.0,
+                    "Unit": "F",
+                    "UnitType": 18
+                },
+                "Maximum": {
+                    "Value": 82.0,
+                    "Unit": "F",
+                    "UnitType": 18
+                }
+            },
+            "Day": {
+                "Icon": 1,
+                "IconPhrase": "Sunny",
+                "HasPrecipitation": false
+            },
+            "Night": {
+                "Icon": 35,
+                "IconPhrase": "Partly cloudy",
+                "HasPrecipitation": false
+            },
+            "Sources": [
+                "AccuWeather"
+            ],
+            "MobileLink": "http://www.accuweather.com/en/il/qiryat-gat/215702/daily-weather-forecast/215702?day=3&lang=en-us",
+            "Link": "http://www.accuweather.com/en/il/qiryat-gat/215702/daily-weather-forecast/215702?day=3&lang=en-us"
+        },
+        {
+            "Date": "2022-05-18T07:00:00+03:00",
+            "EpochDate": 1652846400,
+            "Temperature": {
+                "Minimum": {
+                    "Value": 60.0,
+                    "Unit": "F",
+                    "UnitType": 18
+                },
+                "Maximum": {
+                    "Value": 82.0,
+                    "Unit": "F",
+                    "UnitType": 18
+                }
+            },
+            "Day": {
+                "Icon": 1,
+                "IconPhrase": "Sunny",
+                "HasPrecipitation": false
+            },
+            "Night": {
+                "Icon": 35,
+                "IconPhrase": "Partly cloudy",
+                "HasPrecipitation": false
+            },
+            "Sources": [
+                "AccuWeather"
+            ],
+            "MobileLink": "http://www.accuweather.com/en/il/qiryat-gat/215702/daily-weather-forecast/215702?day=4&lang=en-us",
+            "Link": "http://www.accuweather.com/en/il/qiryat-gat/215702/daily-weather-forecast/215702?day=4&lang=en-us"
+        },
+        {
+            "Date": "2022-05-19T07:00:00+03:00",
+            "EpochDate": 1652932800,
+            "Temperature": {
+                "Minimum": {
+                    "Value": 60.0,
+                    "Unit": "F",
+                    "UnitType": 18
+                },
+                "Maximum": {
+                    "Value": 84.0,
+                    "Unit": "F",
+                    "UnitType": 18
+                }
+            },
+            "Day": {
+                "Icon": 1,
+                "IconPhrase": "Sunny",
+                "HasPrecipitation": false
+            },
+            "Night": {
+                "Icon": 35,
+                "IconPhrase": "Partly cloudy",
+                "HasPrecipitation": false
+            },
+            "Sources": [
+                "AccuWeather"
+            ],
+            "MobileLink": "http://www.accuweather.com/en/il/qiryat-gat/215702/daily-weather-forecast/215702?day=5&lang=en-us",
+            "Link": "http://www.accuweather.com/en/il/qiryat-gat/215702/daily-weather-forecast/215702?day=5&lang=en-us"
+        }
+    ]
+}

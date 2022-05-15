@@ -20,7 +20,7 @@ export default function WeatherDisplay({ currentData, name5Days, data5Days, city
 
   return (
     <>
-      {data5Days &&
+      {data5Days && currentData &&
         <div className="container-fluid">
           <div className="row flex justify-content-around">
             <div className=" ThisWeatherCard card col-md-12">
