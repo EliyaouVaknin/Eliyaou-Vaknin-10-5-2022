@@ -1,4 +1,6 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome, faHeart, faContactBook } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 import '../Styles/Sidebar.css'
 
@@ -10,9 +12,9 @@ export default function Sidebar() {
         <div className="navbar-nav" id="wrapper">
           <div className="border-end bg-white" id="sidebar-wrapper">
             <div className="list-group list-group-flush">
-            <Link to={'/'} className="list-group-item list-group-item-action list-group-item-light p-3">Home</Link>
-            <Link to={'/favorites'} className='list-group-item list-group-item-action list-group-item-light p-3'>Favorites</Link>
-            <Link to={'/contact'} className='list-group-item list-group-item-action list-group-item-light p-3'>Contact</Link>
+            <Link to={'/'} className="list-group-item list-group-item-action list-group-item-light p-3"><FontAwesomeIcon icon={faHome}/> Home</Link>
+            <Link to={'/favorites'} className='list-group-item list-group-item-action list-group-item-light p-3'><FontAwesomeIcon icon={faHeart}/> Favorites</Link>
+            <Link to={'/contact'} className='list-group-item list-group-item-action list-group-item-light p-3'><FontAwesomeIcon icon={faContactBook}/> Contact</Link>
             </div>
           </div>
         </div>
