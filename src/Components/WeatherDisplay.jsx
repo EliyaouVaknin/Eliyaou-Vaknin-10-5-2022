@@ -41,6 +41,7 @@ export default function WeatherDisplay({ currentData, name5Days, data5Days, city
               </div>
             </div>
           </div>
+
           <div className="container-fluid mt-3">
             <div className="row">
               {data5Days.DailyForecasts.map((dataDayNight, i) => {
@@ -48,7 +49,8 @@ export default function WeatherDisplay({ currentData, name5Days, data5Days, city
               })}
             </div>
           </div>
-          <div className="container">
+
+          <div className="container-fluid">
             <div className="flex row justify-content-between">
               <div className="chartDiv col-md-5">
                 <Line data={{
