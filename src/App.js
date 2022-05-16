@@ -9,6 +9,8 @@ import './App.css';
 
 function App() {
 
+  var d = new Date();
+  var tmpKey = '';
   const forcastKey = 'UU8k10S5KKy3tgmzVbxpsvEpAgDY3qNJ';
   var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday'];
   var name5Days = [days[d.getDay()], days[d.getDay() + 1], days[d.getDay() + 2], days[d.getDay() + 3], days[d.getDay() + 4]]
@@ -17,8 +19,6 @@ function App() {
   const [favoritesList, setFavoritesList] = useState([])
   const [cityName, setCityName] = useState('')
   const [key, setKey] = useState('')
-  var d = new Date();
-  var tmpKey = '';
 
   useEffect(() => {
     const fetchData = async () => {
