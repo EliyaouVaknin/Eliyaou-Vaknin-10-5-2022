@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Eliyaou-Vaknin-10-5-2022/static/css/main.f7fab646.css",
-    "main.js": "/Eliyaou-Vaknin-10-5-2022/static/js/main.ca8139bb.js",
+    "main.js": "/Eliyaou-Vaknin-10-5-2022/static/js/main.ba087a8e.js",
     "static/media/partlyCloudy.jpg": "/Eliyaou-Vaknin-10-5-2022/static/media/partlyCloudy.7cfb3e6b7a2201929836.jpg",
     "static/media/contactImg.jpg": "/Eliyaou-Vaknin-10-5-2022/static/media/contactImg.f90218ee59f0442950f7.jpg",
     "static/media/5daysImg.jpg": "/Eliyaou-Vaknin-10-5-2022/static/media/5daysImg.780102395ba44f0c950a.jpg",
     "static/media/abra-logo.webp": "/Eliyaou-Vaknin-10-5-2022/static/media/abra-logo.608238b7b10582ba6bf5.webp",
     "index.html": "/Eliyaou-Vaknin-10-5-2022/index.html",
     "main.f7fab646.css.map": "/Eliyaou-Vaknin-10-5-2022/static/css/main.f7fab646.css.map",
-    "main.ca8139bb.js.map": "/Eliyaou-Vaknin-10-5-2022/static/js/main.ca8139bb.js.map"
+    "main.ba087a8e.js.map": "/Eliyaou-Vaknin-10-5-2022/static/js/main.ba087a8e.js.map"
   },
   "entrypoints": [
     "static/css/main.f7fab646.css",
-    "static/js/main.ca8139bb.js"
+    "static/js/main.ba087a8e.js"
   ]
 }
