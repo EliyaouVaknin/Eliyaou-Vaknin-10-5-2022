@@ -93,7 +93,7 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
+      <Router basename ="/Eliyaou-Vaknin-10-5-2022" >
         <Sidebar />
         <Header getCityKey={getCityKey} forcastKey={forcastKey} />
         <Routes>
