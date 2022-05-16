@@ -57,3 +57,13 @@
   border-bottom: 1px solid rgba(28, 23, 23, 0.5);
   transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
 }
+
+.autoCompleteLi{
+  text-decoration: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.autoCompleteLi :hover{
+  background-color: #0d6efd;
+}

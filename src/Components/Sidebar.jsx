@@ -6,7 +6,7 @@ import '../Styles/Sidebar.css'
 
 export default function Sidebar() {
   return (
-    <div id='SidebarDiv' className="container-fluid py-4">
+    <div id='SidebarDiv' className="container py-4 w-auto">
       <img width={'100%'} height={'8%'} src={require('../Img/abra-logo.webp')}></img>
       <div className="row py-3">
         <div className="navbar-nav" id="wrapper">
