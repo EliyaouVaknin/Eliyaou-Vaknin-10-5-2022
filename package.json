@@ -1,6 +1,7 @@
 {
   "name": "weatherapp",
   "version": "0.1.0",
+  "homepage": "https://eliyaouvaknin.github.io/Eliyaou-Vaknin-10-5-2022/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
@@ -12,6 +13,7 @@
     "chart.js": "^3.7.1",
     "chartjs": "^0.3.24",
     "flowbite": "^1.4.5",
+    "gh-pages": "^4.0.0",
     "react": "^18.1.0",
     "react-chartjs-2": "^4.1.0",
     "react-dom": "^18.1.0",
@@ -20,6 +22,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

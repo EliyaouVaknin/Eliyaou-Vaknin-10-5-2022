@@ -5,6 +5,8 @@ body {
 
 #SidebarDiv{
     position: relative;
+    background-color: #fafafa;
+    margin-right: 1%;
     float: left;
     height: 100vh;
     z-index: 1;

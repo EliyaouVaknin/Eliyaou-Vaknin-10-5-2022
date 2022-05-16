@@ -51,8 +51,8 @@ export default function WeatherDisplay({ currentData, name5Days, data5Days, city
           </div>
 
           <div className="container-fluid">
-            <div className="flex row justify-content-between">
-              <div className="chartDiv col-md-5">
+            <div className="flex row justify-content-between pl-3">
+              <div className="chartDiv col-md-5 bg-light ml-5">
                 <Line data={{
                   labels: [name5Days[0], name5Days[1], name5Days[2], name5Days[3], name5Days[4], name5Days[5]],
                   datasets: [
@@ -70,7 +70,7 @@ export default function WeatherDisplay({ currentData, name5Days, data5Days, city
                   ]
                 }} />
               </div>
-              <div className="chartDiv col-md-5 " >
+              <div className="chartDiv col-md-5 bg-light" >
                 <Line data={
                   {
                     labels: [name5Days[0], name5Days[1], name5Days[2], name5Days[3], name5Days[4], name5Days[5]],
