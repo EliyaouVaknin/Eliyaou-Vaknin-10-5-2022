@@ -24,7 +24,6 @@ export default function Search({ getCityKey, forcastKey, setCityInput }) {
     const setAutocompleteOption = (name) => {
         getCityKey(name);
         setAutocompleteList([]);
-        setInput('');
     }
 
     return (

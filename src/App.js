@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter  as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './Components/Header';
 import Sidebar from './Components/Sidebar'
 import Contact from './Components/Contact'
@@ -9,16 +9,16 @@ import './App.css';
 
 function App() {
 
-  const forcastKey = 'Lxbs0Fv2S4UG2goAp3A8rWUm1E9sHKCl';
+  const forcastKey = 'UU8k10S5KKy3tgmzVbxpsvEpAgDY3qNJ';
   var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday'];
-  var d = new Date();
-  var tmpKey = '';
   var name5Days = [days[d.getDay()], days[d.getDay() + 1], days[d.getDay() + 2], days[d.getDay() + 3], days[d.getDay() + 4]]
   const [currentData, setCurrentData] = useState([])
   const [data5Days, setData5Days] = useState('');
   const [favoritesList, setFavoritesList] = useState([])
   const [cityName, setCityName] = useState('')
   const [key, setKey] = useState('')
+  var d = new Date();
+  var tmpKey = '';
 
   useEffect(() => {
     const fetchData = async () => {
@@ -61,21 +61,16 @@ function App() {
       .then(res => setCurrentData(res))
   }
 
-  // const get5DaysWeather = async () => {
-  //   const baseUrlWeatherData5Days = 'http://dataservice.accuweather.com/forecasts/v1/daily/5day/'
-  //   const queryWeatherData5Days = `http://dataservice.accuweather.com/forecasts/v1/daily/5day/${tmpKey}?apikey=${forcastKey}`
-  //   await fetch(baseUrlWeatherData5Days + queryWeatherData5Days)
-  //     .then(res => res.json())
-  //     .then(res => setData5Days(res))
-  // }
-
   const favoritesFunc = (isFav) => {
+    let tmpFavArray = favoritesList;
+    console.log(favoritesList)
     if (isFav == true) {
       let thisFavoriteCity = {
         favoritekeyNumber: key,
         favoriteCityName: cityName
       }
-      setFavoritesList([...favoritesList, thisFavoriteCity])
+      tmpFavArray.push(thisFavoriteCity);
+      setFavoritesList(tmpFavArray)
     } else {
       let tmpArray = [];
       for (let i = 0; i < favoritesList.length; i++) {
