@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter  as Router, Routes, Route } from 'react-router-dom'
 import Header from './Components/Header';
 import Sidebar from './Components/Sidebar'
 import Contact from './Components/Contact'
@@ -61,13 +61,13 @@ function App() {
       .then(res => setCurrentData(res))
   }
 
-  const get5DaysWeather = async () => {
-    const baseUrlWeatherData5Days = 'http://dataservice.accuweather.com/forecasts/v1/daily/5day/'
-    const queryWeatherData5Days = `http://dataservice.accuweather.com/forecasts/v1/daily/5day/${tmpKey}?apikey=${forcastKey}`
-    await fetch(baseUrlWeatherData5Days + queryWeatherData5Days)
-      .then(res => res.json())
-      .then(res => setData5Days(res))
-  }
+  // const get5DaysWeather = async () => {
+  //   const baseUrlWeatherData5Days = 'http://dataservice.accuweather.com/forecasts/v1/daily/5day/'
+  //   const queryWeatherData5Days = `http://dataservice.accuweather.com/forecasts/v1/daily/5day/${tmpKey}?apikey=${forcastKey}`
+  //   await fetch(baseUrlWeatherData5Days + queryWeatherData5Days)
+  //     .then(res => res.json())
+  //     .then(res => setData5Days(res))
+  // }
 
   const favoritesFunc = (isFav) => {
     if (isFav == true) {
